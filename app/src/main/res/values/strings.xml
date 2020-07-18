@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">InDialect</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="profile">My Profile</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="Hindi">Hindi</string>
+    <string name="Bundelkhandi">Bundelkhandi</string>
+    <string name="Kashmiri">Kashmiri</string>
+    <string name="Punjabi">Punjabi</string>
+    <string name="Garhwali">Garhwali</string>
+    <string name="Bhojpuri">Bhojpuri</string>
+    <string name="Marathi">Marathi</string>
+    <string name="Bengali">Bengali</string>
+    <string name="Telugu">Telugu</string>
+    <string name="Kannada">Kannada</string>
+    <string name="Tamil">Tamil</string>
+    <string name="Malayalam">Malayalam</string>
+
+
+</resources>

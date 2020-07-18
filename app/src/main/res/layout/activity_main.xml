@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="8dp">
+
+                <com.smarteist.autoimageslider.SliderView
+                    android:id="@+id/imageSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="255dp"
+                    app:sliderAnimationDuration="500"
+                    android:background="@color/colorSlider"
+                    app:sliderAutoCycleDirection="back_and_forth"
+                    app:sliderAutoCycleEnabled="true"
+                    app:sliderIndicatorAnimationDuration="600"
+                    app:sliderIndicatorGravity="center_horizontal|bottom"
+                    app:sliderIndicatorMargin="8dp"
+                    app:sliderIndicatorOrientation="horizontal"
+                    app:sliderIndicatorPadding="2dp"
+                    app:sliderIndicatorRadius="1dp"
+
+                    app:sliderIndicatorSelectedColor="#00FFFF"
+                    app:sliderIndicatorUnselectedColor="#FFF"
+                    app:sliderScrollTimeInSec="3"
+                    app:sliderStartAutoCycle="true" />
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorHindi"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        app:srcCompat="@drawable/temple_vector"
+                        >
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/colorHindiDark"
+                        android:padding="8dp"
+                        android:text="@string/Hindi"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16sp">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorBundelkhandi"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        app:srcCompat="@drawable/fortgwl"
+                        >
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/colorBundelkhandiDark"
+                        android:padding="8dp"
+                        android:text="@string/Bundelkhandi"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16sp">
+                    </TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorKashmiri"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        app:srcCompat="@drawable/chinar">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/colorKashmiriDark"
+                        android:padding="8dp"
+                        android:text="@string/Kashmiri"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16sp">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPunjabi"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/golden__temple"
+
+                        >
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/colorPunjabiDark"
+                        android:padding="8dp"
+                        android:text="@string/Punjabi"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16sp">
+                    </TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorGarhwali"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        app:srcCompat="@drawable/kedarnath">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="25dp"
+                        android:background="@color/colorGarhwaliDark"
+                        android:padding="8dp"
+                        android:text="@string/Garhwali"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16sp">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorBhojpuri"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        app:srcCompat="@drawable/nalanda">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/colorBhojpuriDark"
+                        android:padding="8dp"
+                        android:text="@string/Bhojpuri"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16sp">
+                    </TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorMarathi"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:tint="@color/colorGaneshaTint"
+                        app:srcCompat="@drawable/ganesha">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/colorMarathiDark"
+                        android:padding="8dp"
+                        android:text="@string/Marathi"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16sp">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorBengali"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/durga">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/colorBengaliDark"
+                        android:padding="8dp"
+                        android:text="@string/Bengali"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16sp">
+                    </TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- secoond row-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorTelugu"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        app:srcCompat="@drawable/tirupati">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="25dp"
+                        android:background="@color/colorTeluguDark"
+                        android:padding="8dp"
+                        android:text="@string/Telugu"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16sp">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorKannada"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        app:srcCompat="@drawable/hampi">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/colorKannadaDark"
+                        android:padding="8dp"
+                        android:text="@string/Kannada"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16sp">
+                    </TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!-- secoond row end-->
+
+            <!--third row-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorTamil"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        app:srcCompat="@drawable/rameswaram">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="25dp"
+                        android:background="@color/colorTamilDark"
+                        android:padding="8dp"
+                        android:text="@string/Tamil"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16sp">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorMalayalam"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        app:srcCompat="@drawable/kathakali">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/colorMalayalamDark"
+                        android:padding="8dp"
+                        android:text="@string/Malayalam"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16sp">
+                    </TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--third row end-->
+
+            <!--fourth row-->
+
+            <!--fourth row end-->
+            <!--fifth row-->
+
+            <!--fifth row end-->
+            <!--six row-->
+
+
+            <!--six row end-->
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

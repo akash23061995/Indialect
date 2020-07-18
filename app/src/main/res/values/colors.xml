@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#073E56</color>
+    <color name="colorPrimaryDark">#052837</color>
+    <color name="colorAccent">#EBB582</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorHindi">#FF9933</color>
+    <color name="colorHindiDark">#FF4500</color>
+    <color name="colorBundelkhandi">#FFB97A</color>
+    <color name="colorBundelkhandiDark">#C66B27</color>
+    <color name="colorKashmiri">#E2C499</color>
+    <color name="colorKashmiriDark">#F70025</color>
+    <color name="colorPunjabi">#00539C</color>
+    <color name="colorPunjabiDark">#054277</color>
+    <color name="colorGarhwali">#A1D6E2</color>
+    <color name="colorGarhwaliDark">#1995ad</color>
+    <color name="colorBhojpuri">#dac3b3</color>
+    <color name="colorBhojpuriDark">#4f4a45</color>
+    <color name="colorMarathi">#373e45</color>
+    <color name="colorMarathiDark">#1c2023</color>
+    <color name="colorGaneshaTint">#daa520</color>
+    <color name="colorBengali">#fae0e0</color>
+    <color name="colorBengaliDark">#d22e2e</color>
+    <color name="colorTelugu">#1b4b5a</color>
+    <color name="colorTeluguDark">#0f1f38</color>
+    <color name="colorKannada">#c9a66b</color>
+    <color name="colorKannadaDark">#662e1c</color>
+    <color name="colorTamil">#aaa9ad</color>
+    <color name="colorTamilDark">#56565a</color>
+    <color name="colorMalayalam">#84b7ae</color>
+    <color name="colorMalayalamDark">#089780</color>
+    <color name="colorSlider">#ffffff</color>
+
+
+
+</resources>
